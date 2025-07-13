@@ -1,8 +1,12 @@
 {% extends "index.html" %} {% block content %}
-<div class="text-center py-5">
-    <h1 class="display-4">404</h1>
-    <p class="lead">Oops! The page you're looking for doesn't exist.</p>
-    <a href="{{ url_for('main.index') }}" class="btn btn-primary mt-3"
+<div class="text-center py-5 flex flex-col my-60">
+    <h1 class="text-8xl font-semibold my-15">404</h1>
+    <p class="text-3xl mb-3">
+        Oops! The page you're looking for doesn't exist.
+    </p>
+    <a
+        href="{{ url_for('main.index') }}"
+        class="text-xl underline text-blue-400"
         >Return to Homepage</a
     >
 </div>
