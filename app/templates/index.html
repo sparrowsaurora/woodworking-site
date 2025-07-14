@@ -14,4 +14,89 @@
         <img src="" alt="" />
     </div>
 </div>
+
+<!-- Featured -->
+
+<div>
+    <article>
+        <a href="" class="flex flex-col"
+            ><!--BG Image-->
+            <h2></h2>
+            <span class="">
+                <p></p>
+                <p class="bg-green-200"></p>
+            </span>
+        </a>
+    </article>
+    <article>
+        <a href="" class="flex flex-col"
+            ><!--BG Image-->
+            <h2></h2>
+            <span class="">
+                <p></p>
+                <p class="bg-green-200"></p>
+            </span>
+        </a>
+    </article>
+    <article>
+        <a href="" class="flex flex-col"
+            ><!--BG Image-->
+            <h2></h2>
+            <span class="">
+                <p></p>
+                <p class="bg-green-200"></p>
+            </span>
+        </a>
+    </article>
+</div>
+
+<!-- Reviews -->
+{% for review in reviews %}
+
+<div>
+    <p><strong>{{ review.author }}</strong> rated it {{ review.rating }}/5</p>
+    <p>{{ review.content }}</p>
+    <small>Posted on {{ review.created_at.strftime('%Y-%m-%d') }}</small>
+</div>
+<hr />
+{% else %}
+<br />
+{% endfor %}
+<!-- FAQs -->
+
+<!-- Email SignUp -->
+
+<div class="grid place-items-center">
+    <div class="flex bg-zinc-800 rounded-2xl mx-10 p-10 gap-20">
+        <div class="flex flex-col text-white">
+            <h2 class="font-semibold text-4xl">
+                Get updates when there's
+                <br />
+                a new piece
+            </h2>
+            <p class="text-lg">or something like that.</p>
+        </div>
+        <div class="flex flex-col">
+            <form action="" method="POST" class="bg-white rounded-lg p-3">
+                <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Enter your email"
+                    class="text-lg"
+                />
+                <button
+                    type="submit"
+                    class="text-white bg-yellow-400 rounded-lg p-4"
+                >
+                    Get Updates
+                </button>
+            </form>
+            <sub class="mt-2 text-gray-400"
+                >No Spam. I don't want to write that much.</sub
+            >
+        </div>
+    </div>
+</div>
+
 {% endblock %}

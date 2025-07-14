@@ -1,7 +1,7 @@
 from . import db
 from datetime import datetime
 
-class product(db.Model):
+class Product(db.Model):
     __tablename__ = 'products'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -16,4 +16,16 @@ class product(db.Model):
 
     def __repr__(self):
         return f"<Product {self.id}: {self.name}>"
+
+
+class Review(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    author = db.Column(db.String(100))
+    content = db.Column(db.Text)
+    rating = db.Column(db.Integer)
+    created_at = db.Column(db.DateTime, default=db.func.now())
+
+    def __repr__(self):
+        return f"<Review {self.id}: {self.rating}>"
+
 

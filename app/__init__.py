@@ -8,6 +8,9 @@ def create_app():
     app.config.from_object('config.Config')
     db.init_app(app)
     
+    from .models import Product
+    from .models import Review
+
     from .routes import main
     app.register_blueprint(main)
 
