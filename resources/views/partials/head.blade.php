@@ -6,17 +6,20 @@
 <meta name="description" content="{{ $description ?? 'Laravel Application' }}">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<!-- Favicon -->
+{{--Favicon--}}
 <link rel="icon" href="/favicon.ico">
 
-<!-- Fonts -->
+{{--Fonts--}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Styles -->
+{{--Styles--}}
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-<!-- Optional Page Styles -->
+{{--Tailwind CDN--}}
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+{{--Optional Page Styles--}}
 @stack('styles')

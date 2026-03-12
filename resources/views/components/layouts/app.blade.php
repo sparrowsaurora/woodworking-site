@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ $title ?? "App" }}</title>
+    <title>{{ $title ?? config('app.name') }}</title>
     @include('partials.head')
 </head>
 
