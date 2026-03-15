@@ -1,16 +1,14 @@
-<footer class="site-footer">
+<footer class="site-footer bg-black text-white">
 
-    <div class="container footer-container">
+    <div class="flex justify-evenly items-center h-20">
 
-        <div class="footer-left">
-            <p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p>
-        </div>
-
-        <div class="footer-right">
-            <a href="/privacy">Privacy</a>
+        <p>&copy; {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p>
+{{--            <a href="/privacy">Privacy</a>--}}
+        <ul class="flex gap-10">
             <a href="/terms">Terms</a>
+            <a href="/custom">Custom</a>
             <a href="/contact">Contact</a>
-        </div>
+        </ul>
 
     </div>
 

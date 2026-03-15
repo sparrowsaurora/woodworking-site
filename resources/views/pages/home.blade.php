@@ -1,9 +1,9 @@
 <x-layouts.app title="Home">
-    <div class="flex justify-between bg-[url('/images/hero.jpg')] bg-cover bg-center h-[500px]">
+    <div class="flex justify-between bg-[url('/images/hero.jpg')] bg-cover bg-center">
         <div class="grid place-items-center m-auto">
             <main class="p-10 bg-white">
                 <h1 class="text-4xl">Artisan reclaimed wood furniture</h1>
-                <p class="font-bold">lorem ipsum</p>
+                <p class="font-semibold">Locally sourced timber, Handcrafted in Perth</p>
                 <nav class="flex gap-5">
                     <button>View Gallery</button>
                     <button>Custom</button>
