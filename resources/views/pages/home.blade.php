@@ -5,8 +5,8 @@
                 <h1 class="text-4xl">Artisan reclaimed wood furniture</h1>
                 <p class="font-semibold">Locally sourced timber, Handcrafted in Perth</p>
                 <nav class="flex gap-5">
-                    <button>View Gallery</button>
-                    <button>Custom</button>
+                    <button class="p-2 px-3 border-3 rounded-2xl text-white font-semibold bg-red-600 shadow-2xl">View Gallery</button>
+                    <button class="px-3 border rounded-2xl">Custom</button>
                 </nav>
             </main>
         </div>
@@ -14,4 +14,5 @@
             <div class=""></div>
         </div>
     </div>
+    <x-ui.banner/>
 </x-layouts.app>
