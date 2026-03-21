@@ -9,7 +9,7 @@
 
 <x-navigation.navbar />
 
-<main class="container">
+<main>
     {{ $slot }}
 </main>
 
